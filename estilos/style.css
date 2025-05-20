@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+div.changelog-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 700px;
+    height: 700px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+div.change-title {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin: 25px;
+}
+
+div.change-title > p {
+    margin: 10px;
+    color: rgb(156, 156, 156);
+}
+
+div.main-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 25px;
+    text-align: justify;
+}
+
+div.data-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align: center;
+    height: 500px;
+}
+
+div.data-container > p {
+    color: rgb(156, 156, 156);
+}
+
+div.pontos {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align: center;
+    height: 500px;
+}
+
+span.ponto {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+div.changelog-items {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align: center;
+    height: 500px;
+}
+
+div.changelog-items > p {
+    font-weight: 900;
+}
+
+div.complete-changelog {
+    margin-top: 15px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    cursor: pointer;
+} 
