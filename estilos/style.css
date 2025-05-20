@@ -1,12 +1,20 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -15,7 +23,7 @@ div.changelog-container {
     display: flex;
     flex-flow: column nowrap;
     width: 700px;
-    height: 700px;
+    height: 750px;
     border: 2px solid black;
     border-radius: 15px;
     margin: 0 auto;
@@ -61,6 +69,16 @@ div.pontos {
     height: 500px;
 }
 
+span.linha {
+    position: absolute;
+    height: 550px;
+    border: 1px solid black;
+    width: 1px;
+    background-color: black;
+    margin-left: 6px;
+    top: 240px;
+}
+
 span.ponto {
     width: 15px;
     height: 15px;
@@ -80,9 +98,9 @@ div.changelog-items > p {
     font-weight: 900;
 }
 
-div.complete-changelog {
-    margin-top: 15px;
-    padding: 15px;
+div.complete-changelog {    
+    margin-top: 50px;
+    padding: 10px;
     color: white;
     background-color: black;
     border-radius: 15px;
