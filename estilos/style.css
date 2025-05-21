@@ -10,16 +10,21 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: oklch(21% 0.006 285.885);
     color: white;
+    height: 100vh;
 }
  
 div.changelog-container {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 800px;
-    border: 1px solid white;
+    max-width: 800px;
+    border: 3px solid white;
+    border-radius: 25px;
 }
 
 div.change-title {
@@ -27,7 +32,7 @@ div.change-title {
 }
 
 div.change-title > h1 {
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -39,9 +44,8 @@ div.change-title > p {
 div.main-container {
     display: flex;
     flex-direction: row nowrap;
-    padding: 50px;
+    padding: 30px;
     gap: 25px;
-    border: 1px solid white;
 }
 
 div.data-container {
@@ -50,12 +54,26 @@ div.data-container {
 }
 
 div.data-container > p {
-    margin-bottom: 25px;
+    color: gray;
+    margin-bottom: 45px;
+    height: 20px;
+    text-align: justify;
 }
 
 div.pontos {
     display: flex;
     flex-flow: column nowrap;
+    border: 1px solid black;
+}
+
+div.linha {
+    position: absolute;
+    width: 3px;
+    top: 288px;
+    left: 838px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
 }
 
 div.ponto {
@@ -63,5 +81,40 @@ div.ponto {
     height: 20px;
     background-color: white;
     border-radius: 50%;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
+
+div.pontos:last-child {
+    margin-bottom: 0px;
+}
+
+div.changelog-items {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.changelog-items > p {
+    text-align: left;
+    margin-bottom: 45px;
+    height: 20px;
+}
+
+div.complete-changelog {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.complete-changelog:hover {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
