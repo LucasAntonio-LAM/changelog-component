@@ -11,110 +11,64 @@
 
 body {
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
     align-items: center;
-    background: oklch(21% 0.006 285.885);
-    color: white;
+    justify-content: center;
     height: 100vh;
+    background-color: oklch(27.8% 0.033 256.848);
 }
- 
+
 div.changelog-container {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-    max-width: 800px;
-    border: 3px solid white;
-    border-radius: 25px;
+    border: 3px solid black;
+    border-radius: 15px;
 }
 
-div.change-title {
+div.title {
+    display: flex;
+    flex-flow: column nowrap;
     text-align: center;
+    margin: 50px;
+    gap: 10px;
 }
 
-div.change-title > h1 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-div.change-title > p {
-    margin-bottom: 45px;
-    color: oklch(44.2% 0.017 285.786);
+div.title > p {
+    color: oklch(20.5% 0 0);
 }
 
 div.main-container {
     display: flex;
-    flex-direction: row nowrap;
-    padding: 30px;
-    gap: 25px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
 }
 
-div.data-container {
+div.data {
+    padding-right: 40px;
+    color: oklch(20.5% 0 0);
+    flex: 1;
+}
+
+div.bola-container {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-div.data-container > p {
-    color: gray;
-    margin-bottom: 45px;
-    height: 20px;
-    text-align: justify;
-}
-
-div.pontos {
-    display: flex;
-    flex-flow: column nowrap;
+div.bola {
+    width: 15px;
+    height: 15px;
+    background-color: black;
     border: 1px solid black;
+    border-radius: 50%;
 }
 
 div.linha {
-    position: absolute;
     width: 3px;
-    top: 288px;
-    left: 838px;
-    height: 450px;
-    background-color: white;
-    border-radius: 15px;
-}
-
-div.ponto {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    margin-bottom: 45px;
-}
-
-div.pontos:last-child {
-    margin-bottom: 0px;
-}
-
-div.changelog-items {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-div.changelog-items > p {
-    text-align: left;
-    margin-bottom: 45px;
-    height: 20px;
-}
-
-div.complete-changelog {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 25px;
-    background-color: white;
-    color: black;
-    text-align: center;
-    cursor: pointer;
-}
-
-div.complete-changelog:hover {
-    border: 2px solid white;
+    height: 100%;
     background-color: black;
-    color: white;
-    transition: background-color 0.5s;
-    transition: color 0.5s;
+    
 }
-
