@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -46,9 +47,16 @@ div.main-container {
 }
 
 div.data {
+    display: flex;
+    flex-flow: column nowrap;
     padding-right: 40px;
     color: oklch(20.5% 0 0);
     flex: 1;
+    gap: 50px;
+}
+
+div.data > p {
+    text-align: left;
 }
 
 div.bola-container {
@@ -56,6 +64,9 @@ div.bola-container {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    gap: 57px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 div.bola {
@@ -68,7 +79,14 @@ div.bola {
 
 div.linha {
     width: 3px;
-    height: 100%;
+    height: 500px;
     background-color: black;
-    
+    position: absolute;
+}
+
+div.change {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 40px;
+    gap: 50px;
 }

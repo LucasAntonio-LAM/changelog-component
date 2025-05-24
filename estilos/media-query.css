@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        height: 100%;
+    }
+
+    div.title {
+        margin: 10px;
+        gap: 5px;
+    }
+
+    div.title > p {
+        font-size: 0.89em;
+    }
+
+    div.main-container {
+        justify-content: space-around;
+    }
+
+    div.data {
+        padding: 0px;
+        margin-left: 5px;
+        font-size: 0.9em;
+    }
+
+    div.bola-container {
+        gap: 76px;
+        margin-right: 0px;
+    }
+
+    div.linha {
+        height: 600px;
+    }
+
+    div.change {
+        gap: 60px;
+        width: 250px;
+        margin-left: 10px;
+        padding-left: 0px;
+    }
+}
